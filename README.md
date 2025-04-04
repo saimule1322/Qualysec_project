@@ -10,4 +10,18 @@
 4 . then start the server
    npm run dev
 
-   na
+   Backend setup
+   cd demo
+
+  1. Update your application.properties:
+
+   spring.data.mongodb.uri=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<database>?retryWrites=true&w=majority
+   spring.data.mongodb.database=your_db_name
+   server.port=8080
+
+  2. Install the dependencies
+     mvn clean install
+
+ 3. Run the backend project
+    mvn spring-boot:run
+
