@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; transform: translateY(10px); }
+  10%, 30% { opacity: 1; transform: translateY(0); }
+  40%, 100% { opacity: 0; transform: translateY(-10px); }
+}
+
+.animate-fade1 {
+  animation: fadeInOut 6s infinite;
+}
+.animate-fade2 {
+  animation: fadeInOut 6s infinite 2s;
+}
+.animate-fade3 {
+  animation: fadeInOut 6s infinite 4s;
+}
+@keyframes marqueeScroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee {
+  animation: marqueeScroll 25s linear infinite;
+}
